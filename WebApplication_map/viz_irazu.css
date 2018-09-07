@@ -1,0 +1,69 @@
+canvas{
+    border:1px solid rgba(84, 84, 102, 0.8);
+}
+
+
+#dashDerecho{
+    border:1px solid rgba(84, 84, 102, 0.8);
+
+    margin-top: 5px;
+    margin-left: 120px;
+    position: absolute;
+}
+
+h1 {
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    font-size: 12px;
+    font-family: Roboto-Medium,sans-serif;
+    color:#808080;
+    /*text-align:center;*/
+}
+
+h2 {
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    font-size: 10px;
+    font-family: Roboto-Medium,sans-serif;
+    color:#aaaaaa;
+    /*text-align:center;*/
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url("Orbitron.ttf");
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+.text-label {
+    color: #fff;
+    font-family: Roboto-Medium,sans-serif;
+    font-size: 10px;
+    margin: -5px 0 0 15px;
+    pointer-events:none;
+}
+
+.text-labelSat {
+    color: #ffff55;
+    font-family: Roboto-Medium,sans-serif;
+    font-size: 12px;
+    margin: -5px 0 0 15px;
+    pointer-events:none;
+}
+
+#notes {
+    color: #fff;
+    font-family: Roboto-Medium,sans-serif;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}

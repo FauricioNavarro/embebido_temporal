@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/bootstrap.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/viz_irazu.css")" rel="stylesheet" type="text/css" />
+
+    <script src="@Url.Content("~/Scripts/bootstrap.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery-1.5.1.min.js")"></script>
+    <script src="@Url.Content("~/js/three.min.js")"></script>
+    <script src="@Url.Content("~/js/THREE.OrbitControls.js")"></script>
+    <script src="@Url.Content("~/js/31mapamundi.js")"></script>
+    <script src="@Url.Content("~/js/ciudades.js")"></script>
+    <script src="@Url.Content("~/js/threex.objcoord.js")"></script>
+    <script src="@Url.Content("~/js/miscelaneas.js")"></script>
+    <!--<script src="js/etiquetas.js"></script>-->
+    <script src="@Url.Content("~/js/mundo.js")"></script>
+    <script src="@Url.Content("~/js/BB.js")"></script>
+    <script src="@Url.Content("~/js/satelite.js")"></script>
+    <script src="@Url.Content("~/js/dashboardSuperior.js")"></script>
+    <script src="@Url.Content("~/js/dashBoardInferior.js")"></script>
+    <script src="@Url.Content("~/js/dashboardDerecho.js")"></script>
+    <script src="@Url.Content("~/js/dashboardIzquierdo.js")"></script>
+    <script src="@Url.Content("~/js/dashISS.js")"></script>
+
+    <script src="@Url.Content("~/viz_irazu.js")"></script>
+</head>
+<body>    
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><b>Proyecto Irazú</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="@Url.Action("index", "main")" >Sistema satélite <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("salud", "main")">Salud del sistema </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("forestal", "main")">Sistema Forestal</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section id="main">
+        @RenderBody()
+    </section>
+
+    
+</body>
+</html>
